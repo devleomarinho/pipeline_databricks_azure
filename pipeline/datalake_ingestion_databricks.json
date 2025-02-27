@@ -13,7 +13,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/2023211510024@iesp.edu.br/pipeline_databricks_azure/notebooks/landing_to_bronze"
+				},
+				"linkedServiceName": {
+					"referenceName": "databricks_datafactory_connection",
+					"type": "LinkedServiceReference"
+				}
 			},
 			{
 				"name": "ingestion_silver_layer",
@@ -33,7 +40,14 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/2023211510024@iesp.edu.br/pipeline_databricks_azure/notebooks/bronze_to_silver"
+				},
+				"linkedServiceName": {
+					"referenceName": "databricks_datafactory_connection",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
